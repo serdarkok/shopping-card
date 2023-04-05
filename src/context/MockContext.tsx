@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, Dispatch, SetStateAction } from "react";
 import MockData from '../constants/mock-data.json';
 import { IProduct, IProductBaremList } from "../constants/MockData.interfaces";
 
@@ -12,12 +12,13 @@ export interface IValues {
   selected?: ISelected,
   price?: number,
   barem?: IProductBaremList,
+  id?: string
 }
 
 export interface IContextDefault {
   values: IValues,
   data: IProduct,
-  setValues: (values: IValues) => void
+  setValues: Dispatch<SetStateAction<IValues>>
 }
 
 const contextDefault: IContextDefault = {

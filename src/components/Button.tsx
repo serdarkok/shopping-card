@@ -3,21 +3,11 @@ import { MockContext } from "../context/MockContext";
 import { useContext, useEffect, useState } from "react";
 
 export default function Button() {
-  const { values, data } = useContext(MockContext);
+  const { values } = useContext(MockContext);
   const [disabled, setDisabled] = useState(true);
 
   const sendData = () => {
-    let id: string = '';
-    const selectedByColor = data?.productVariants.filter((v) => {
-      return v.attributes.some((a) => a.value === values.selected?.Renk);
-    });
-    if(selectedByColor.length) {
-      const selectedBySize = selectedByColor.filter((v) => {
-        return v.attributes.some((a) => a.value === values.selected?.Beden);
-      });
-      id = selectedBySize[0].id;
-    }
-    console.log({barem: values?.barem, id});
+    console.log({barem: values?.barem, id: values?.id});
   };
 
   useEffect(() => {

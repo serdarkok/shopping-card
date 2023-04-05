@@ -17,7 +17,7 @@ export default function Attributes(props: IProps) {
 
   const handleSelectedAttr = (value: ISelected) => {
     setSelectedAttr(value.Renk ? { ...value } : { ...selectedAttr, ...value });
-    setValues({...values, selected: value.Renk ? { ...value } : { ...selectedAttr, ...value }});
+    setValues((prevValues) => ({...prevValues, selected: value.Renk ? { ...value } : { ...selectedAttr, ...value }}));
   }
 
   const availableAttributes = () => {
@@ -25,7 +25,7 @@ export default function Attributes(props: IProps) {
       const selectedByColor = data?.productVariants.filter((v) => {
         return v.attributes.some((a) => a.value === values.selected?.Renk);
       });
-      if(selectedByColor.length) setValues({...values, availableSizes: selectedByColor.map(v => v.attributes[0].value)})
+      if(selectedByColor.length) setValues((prevValues) => ({...prevValues, availableSizes: selectedByColor.map(v => v.attributes[0].value)}));
     }
   }
 

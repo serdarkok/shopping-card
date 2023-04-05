@@ -7,7 +7,7 @@ import { IProductVariants } from "../constants/MockData.interfaces";
 
 export default function Image() {
   const [selectedImage, selectedImageApi] = useState(0);
-  const { values, data } = useContext(MockContext);
+  const { values, data, setValues } = useContext(MockContext);
 
   const getAllImage = data?.productVariants.reduce((acc: string[], value: IProductVariants) => {
     return acc = [...acc, ...value.images];
@@ -17,7 +17,7 @@ export default function Image() {
 
   const [emblaRef, emblaRefApi] = useEmblaCarousel();
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
-    containScroll: 'trimSnaps',
+    containScroll: 'keepSnaps',
     dragFree: true,
   });
 
@@ -44,7 +44,7 @@ export default function Image() {
   }, [emblaRefApi, onSelect]);
 
   useEffect(() => {
-    let selectedByColor, selectedBySize;
+    let selectedByColor: IProductVariants[], selectedBySize: IProductVariants[];
 
     if(values.selected?.Renk && values.selected?.Beden) {
       selectedByColor = data?.productVariants.filter((v) => {
@@ -54,9 +54,10 @@ export default function Image() {
         selectedBySize = selectedByColor.filter((v) => {
           return v.attributes.some((a) => a.value === values.selected?.Beden);
         });
-      }
-      if(selectedBySize) {
-        setImages(selectedBySize.reduce((acc: string[], v) => acc = [...acc, ...v.images], []));
+        if(selectedBySize) {
+          setImages(selectedBySize.reduce((acc: string[], v) => acc = [...acc, ...v.images], []));
+          setValues((prevValues) => ({ ...prevValues, id: selectedBySize[0].id }));
+        }
       }
     } else if (values.selected?.Renk) {
       selectedByColor = data?.productVariants.filter((v) => {

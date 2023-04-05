@@ -22,24 +22,25 @@ export default function Input(props: IProps) {
     }
   }
 
-  const calculateTotalPrice = (): number | undefined => {
-    if(typeof piece === 'number') {
-      const selectedBarem = data.baremList.filter((v) => {
-        if(piece >= v.minimumQuantity && piece <= v.maximumQuantity) {
-          return v;
-        }
-      });
-      const price = selectedBarem[0].price * piece
-      setValues({...values, price, barem: {...selectedBarem[0]} });
-      return (price);
-    }
-  }
-
   useEffect(() => {
+    const calculateTotalPrice = (): number | undefined => {
+      if(typeof piece === 'number') {
+        const selectedBarem = data.baremList.filter((v) => {
+          if(piece >= v.minimumQuantity && piece <= v.maximumQuantity) {
+            return true;
+          }
+          return false;
+        });
+        const price = selectedBarem[0].price * piece;
+        setValues({...values, price, barem: {...selectedBarem[0]} });
+        return (price);
+      }
+    }
+
     if(typeof piece === 'number' && piece >= props.lowestPiece) {
       calculateTotalPrice();
     }
-  }, [piece])
+  }, [piece]);
 
   return (
     <Wrapper>
