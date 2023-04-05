@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './router';
 import { createGlobalStyle } from 'styled-components';
-import reportWebVitals from './reportWebVitals';
 
 const GlobalStyle = createGlobalStyle`
+  *{
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+  }
+  #root{
+      margin: 0 auto;
+  }
   body {
     margin: 0;
-    background: #dcdad9;
+    background: #faf9f7;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -24,8 +32,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

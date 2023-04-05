@@ -1193,6 +1193,25 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.2.0.tgz#2cbcf822bf3764c9658c4d2e568bd0c0cb748016"
   integrity sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw==
 
+"@emmetio/abbreviation@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@emmetio/abbreviation/-/abbreviation-2.3.0.tgz#937b6cc6b6335936131dc040a8a238a4e6ed7246"
+  integrity sha512-QeoUgJpvMRzS2poaA1U2qfAIN9jFoAI9/teWi/KBnBLLxo24HbpIKOsX5h9sEaTaay9YGn5bb/NL6u4OOy2huw==
+  dependencies:
+    "@emmetio/scanner" "^1.0.1"
+
+"@emmetio/css-abbreviation@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@emmetio/css-abbreviation/-/css-abbreviation-2.1.5.tgz#39256283fe1a882a79b70a5ec6c938f128ada361"
+  integrity sha512-13xPmr63yP/JBQgZrxUtrhhQZF3849pghgm0CyEDsCEtoXTsYWRWooI6opijgx2tDTdP0jflDdzxnQUh3GODOg==
+  dependencies:
+    "@emmetio/scanner" "^1.0.1"
+
+"@emmetio/scanner@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@emmetio/scanner/-/scanner-1.0.1.tgz#51d6b418fd3688494face5ff2b274624b9194e9b"
+  integrity sha512-rphFhTv5N7mFUBigMDMQujdO0sEyEs1FNdv0zhO4nDAN9ScKbi7NVkrAEiZ7kvcLoJtx2G6mqBh4sZh2/W7cug==
+
 "@emotion/is-prop-valid@^1.1.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-1.2.0.tgz#7f2d35c97891669f7e276eb71c83376a5dc44c83"
@@ -1684,6 +1703,17 @@
   integrity sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@styled/typescript-styled-plugin@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@styled/typescript-styled-plugin/-/typescript-styled-plugin-0.20.0.tgz#2e385f66534d8e548835039c1209e1d4728c2b2a"
+  integrity sha512-qUqFB5VFIDX9FipzrGGgQuCKU6jftCxEhMXtBUsxM+M8a6OKWAIZnhEvQn+IaUjFrSGumIoR4b+5zlHUjHrMTA==
+  dependencies:
+    "@vscode/emmet-helper" "^2.8.4"
+    typescript-template-language-service-decorator "^2.3.1"
+    vscode-css-languageservice "^6.2.1"
+    vscode-languageserver-textdocument "^1.0.7"
+    vscode-languageserver-types "^3.17.2"
 
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
@@ -2290,6 +2320,22 @@
   dependencies:
     "@typescript-eslint/types" "5.57.0"
     eslint-visitor-keys "^3.3.0"
+
+"@vscode/emmet-helper@^2.8.4":
+  version "2.8.6"
+  resolved "https://registry.yarnpkg.com/@vscode/emmet-helper/-/emmet-helper-2.8.6.tgz#ee2fa52321d6af8a40310fd9d37b8590a4dabb18"
+  integrity sha512-IIB8jbiKy37zN8bAIHx59YmnIelY78CGHtThnibD/d3tQOKRY83bYVi9blwmZVUZh6l9nfkYH3tvReaiNxY9EQ==
+  dependencies:
+    emmet "^2.3.0"
+    jsonc-parser "^2.3.0"
+    vscode-languageserver-textdocument "^1.0.1"
+    vscode-languageserver-types "^3.15.1"
+    vscode-uri "^2.1.2"
+
+"@vscode/l10n@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@vscode/l10n/-/l10n-0.0.11.tgz#325d7beb2cfb87162bc624d16c4d546de6a73b72"
+  integrity sha512-ukOMWnCg1tCvT7WnDfsUKQOFDQGsyR5tNgRpwmqi+5/vzU3ghdDXzvIM4IOPdSb3OeSsBNvmSL8nxIVOqi2WXA==
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -3889,6 +3935,18 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.347.tgz#4b72564912c3456c6704d4250918aa6a105d5dc3"
   integrity sha512-LNi3+/9nV0vT6Bz1OsSoZ/w7IgNuWdefZ7mjKNjZxyRlI/ag6uMXxsxAy5Etvuixq3Q26exw2fc4bNYvYQqXSw==
 
+embla-carousel-react@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-7.1.0.tgz#e716f4df7fd31f7ca3e59a3e011158167bc3c468"
+  integrity sha512-tbYRPRZSDNd2QLNqYDcArAakGIxtUbhS7tkP0dGXktXHGgcX+3ji3VrOUTOftBiujZrMV8kRxtrRUe/1soloIQ==
+  dependencies:
+    embla-carousel "7.1.0"
+
+embla-carousel@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-7.1.0.tgz#c770dd3ade9285a97f5e3b6bbf705bc35ec0f9b5"
+  integrity sha512-Bh8Pa8NWzgugLkf8sAGexQlBCNDFaej5BXiKgQdRJ1mUC9NWBrw9Z23YVPVGkguWoz5LMjZXXFVGCobl3UPt/Q==
+
 emittery@^0.10.2:
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.10.2.tgz#902eec8aedb8c41938c46e9385e9db7e03182933"
@@ -3898,6 +3956,14 @@ emittery@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.8.1.tgz#bb23cc86d03b30aa75a7f734819dee2e1ba70860"
   integrity sha512-uDfvUjVrfGJJhymx/kz6prltenw1u7WrCg1oa94zYY8xxVpLLUu045LAT0dhDZdXG58/EpPL/5kA180fQ/qudg==
+
+emmet@^2.3.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/emmet/-/emmet-2.4.0.tgz#8b0d9b1d86a4a9fa2102592002ae63cf21868951"
+  integrity sha512-kJzI3hzl3B6Vh9hdLngf0k6Pa33q4QKXQJtxO2B9g2Rv+JHua0nDu/5BRUCr65XAxP3tXO/NfQZVKOSx4UtjZg==
+  dependencies:
+    "@emmetio/abbreviation" "^2.3.0"
+    "@emmetio/css-abbreviation" "^2.1.5"
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -6083,6 +6149,11 @@ json5@^2.1.2, json5@^2.2.0, json5@^2.2.2:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
+
+jsonc-parser@^2.3.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/jsonc-parser/-/jsonc-parser-2.3.1.tgz#59549150b133f2efacca48fe9ce1ec0659af2342"
+  integrity sha512-H8jvkz1O50L3dMZCsLqiuB2tA7muqbSg1AtGEkN0leAqGjsUzDJir3Zwr02BhqdcITPg3ei3mZ+HjMocAknhhg==
 
 jsonfile@^6.0.1:
   version "6.1.0"
@@ -8813,6 +8884,11 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
+typescript-template-language-service-decorator@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/typescript-template-language-service-decorator/-/typescript-template-language-service-decorator-2.3.1.tgz#f5e3a15cd6cdcd32aa0cbaebf2be753f8ceb46a7"
+  integrity sha512-+Q5+cvBtPO4VKNyyI6O+XnIne+/hq/WfNhBaF4hJP8nB8TbikTg+2h9uBMsqduwX1+kVfwG9SBSwMTtvi2Ep7w==
+
 typescript@^4.9.5:
   version "4.9.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
@@ -8949,6 +9025,36 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
+
+vscode-css-languageservice@^6.2.1:
+  version "6.2.4"
+  resolved "https://registry.yarnpkg.com/vscode-css-languageservice/-/vscode-css-languageservice-6.2.4.tgz#d03ca783ad922cb903602ca1478f5161e5e5de54"
+  integrity sha512-9UG0s3Ss8rbaaPZL1AkGzdjrGY8F+P+Ne9snsrvD9gxltDGhsn8C2dQpqQewHrMW37OvlqJoI8sUU2AWDb+qNw==
+  dependencies:
+    "@vscode/l10n" "^0.0.11"
+    vscode-languageserver-textdocument "^1.0.8"
+    vscode-languageserver-types "^3.17.3"
+    vscode-uri "^3.0.7"
+
+vscode-languageserver-textdocument@^1.0.1, vscode-languageserver-textdocument@^1.0.7, vscode-languageserver-textdocument@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-textdocument/-/vscode-languageserver-textdocument-1.0.8.tgz#9eae94509cbd945ea44bca8dcfe4bb0c15bb3ac0"
+  integrity sha512-1bonkGqQs5/fxGT5UchTgjGVnfysL0O8v1AYMBjqTbWQTFn721zaPGDYFkOKtfDgFiSgXM3KwaG3FMGfW4Ed9Q==
+
+vscode-languageserver-types@^3.15.1, vscode-languageserver-types@^3.17.2, vscode-languageserver-types@^3.17.3:
+  version "3.17.3"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.17.3.tgz#72d05e47b73be93acb84d6e311b5786390f13f64"
+  integrity sha512-SYU4z1dL0PyIMd4Vj8YOqFvHu7Hz/enbWtpfnVbJHU4Nd1YNYx8u0ennumc6h48GQNeOLxmwySmnADouT/AuZA==
+
+vscode-uri@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-2.1.2.tgz#c8d40de93eb57af31f3c715dd650e2ca2c096f1c"
+  integrity sha512-8TEXQxlldWAuIODdukIb+TR5s+9Ds40eSJrw+1iDDA9IFORPjMELarNQE3myz5XIkWWpdprmJjm1/SxMlWOC8A==
+
+vscode-uri@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.7.tgz#6d19fef387ee6b46c479e5fb00870e15e58c1eb8"
+  integrity sha512-eOpPHogvorZRobNqJGhapa0JdwaxpjVvyBp0QIUMRMSf8ZAlqOdEquKuRmw9Qwu0qXtJIWqFtMkmvJjUZmMjVA==
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"
